@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f6f9fc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.canvas {
+    width: 550px;
+    height: 550px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.controls .controls__range {
+    margin-bottom: 20px;
+}
+
+.controls .controls__btns {
+    margin-bottom: 30px;
+}
+
+.controls__btns button {
+    all: unset;
+    width: 80px;
+    padding: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls__btns button:active {
+    transform: scale(0.98);
+}
+
+.controls .controls__colors {
+    display: flex;
+}
+
+.controls__colors .controls__color {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.3;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.controls__colors .controls__color:hover {
+    opacity: 1;
+}
+
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+input[type="color"]:hover {
+    opacity: 1;
+}
+
+.controls__colors .active {
+    opacity: 1;
+}
